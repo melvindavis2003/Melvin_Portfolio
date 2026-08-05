@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Anti-flash theme script -->
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
+
+    <!-- Primary Meta Tags -->
+    <title>Melvin Davis | Software Engineering, Business Analyst & Project Management Portfolio</title>
+    <meta name="title" content="Melvin Davis | Software Engineering, Business Analyst & Project Management Portfolio">
+    <meta name="description"
+        content="Official portfolio & resume website of Melvin Davis — B.Tech Computer Science Graduate (2025), Product Lead, AI Strategy Specialist, and Certified Business Analyst & Project Manager based in Thrissur, Kerala.">
+    <meta name="keywords"
+        content="Melvin Davis, Software Engineer, Business Analyst, Project Management, Thrissur Kerala, B.Tech Computer Science, Jyothi Engineering College, EduX, Serene AI, KRATOS drone, Tatva Blueprint Awards">
+    <meta name="author" content="Melvin Davis">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://melvindavis2003.github.io/">
+    <meta property="og:title" content="Melvin Davis | Software Engineering & Business Analyst Portfolio">
+    <meta property="og:description"
+        content="Explore the portfolio, projects, certifications, and experience of Melvin Davis. Specializing in Software Engineering, AI Strategy, and Project Management.">
+    <meta property="og:image" content="./avatar.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Melvin Davis | Resume & Portfolio">
+    <meta property="twitter:description"
+        content="Explore the projects and certified credentials of Melvin Davis in Software Engineering, Business Analysis, and Project Management.">
+    <meta property="twitter:image" content="./avatar.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://melvindavis2003.github.io/">
+
+    <!-- Structured Data / JSON-LD for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Melvin Davis",
+      "jobTitle": "Software Engineer & Business Analyst",
+      "email": "mailto:melvindavis2003@gmail.com",
+      "telephone": "+918547228913",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Thrissur",
+        "addressRegion": "Kerala",
+        "addressCountry": "India"
+      },
+      "almaMater": "Jyothi Engineering College",
+      "sameAs": [
+        "https://github.com/melvindavis2003",
+        "https://linkedin.com/in/melvindavis2003"
+      ],
+      "knowsAbout": [
+        "Software Engineering",
+        "Business Analysis",
+        "Project Management",
+        "Analytics & Data",
+        "Databases & SQL",
+        "DevOps"
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./portfolio.css">
+</head>
+
+<body>
+    <div class="resume-wrapper" id="main-container">
+        <main class="resume-card" id="resume-card-main">
+
+            <!-- Theme Switcher Toggle -->
+            <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Dark and Light Mode" title="Toggle Theme Mode">
+                <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                <span class="theme-text">Dark Mode</span>
+            </button>
+
+            <!-- Left Sidebar Section -->
+            <aside class="sidebar" id="sidebar-info" aria-label="Personal Information and Sidebar">
+
+                <!-- Profile Header -->
+                <header class="profile-header" id="profile-header-section">
+                    <div class="avatar-container" id="avatar-wrapper">
+                        <img src="./avatar.png" alt="Melvin Davis - Software Engineering & Business Analyst"
+                            class="avatar-img" id="profile-avatar" loading="eager" width="108" height="108">
+                    </div>
+                    <h1 class="name" id="user-name">Melvin Davis</h1>
+                    <p class="role-subtitle" id="user-role-title">Software Engineering / Business Analyst / Project Management</p>
+                    <p class="profile-bio" id="user-bio">
+                        B.Tech Computer Science graduate (2025) with a track record of leading products and research
+                        projects from concept to delivery. Led strategy for two AI prototypes and a state-competition
+                        drone system recognised in The Hindu. Bridges technical execution and business communication —
+                        targeting Software Engineering, Business Analyst, Project Management, and Business Management
+                        roles.
+                    </p>
+                </header>
+
+                <div class="sidebar-divider" aria-hidden="true"></div>
+
+                <!-- Contact Details -->
+                <section class="sidebar-block" id="contact-details-block" aria-label="Contact Information">
+                    <h2 class="sidebar-heading">Contact Info</h2>
+
+                    <div class="contact-item" id="contact-email">
+                        <div class="icon-bubble" aria-hidden="true">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-meta">
+                            <span class="label">Email</span>
+                            <a href="mailto:melvindavis2003@gmail.com" class="val" id="link-email"
+                                title="Email Melvin Davis">melvindavis2003@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item" id="contact-phone">
+                        <div class="icon-bubble" aria-hidden="true">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="contact-meta">
+                            <span class="label">Phone</span>
+                            <a href="tel:+918547228913" class="val" id="link-phone" title="Call Melvin Davis">+91 8547228913</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item" id="contact-location">
+                        <div class="icon-bubble" aria-hidden="true">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="contact-meta">
+                            <span class="label">Location</span>
+                            <span class="val" id="val-location">Thrissur, Kerala, India</span>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="sidebar-divider" aria-hidden="true"></div>
+
+                <!-- Social Profiles -->
+                <section class="sidebar-block" id="social-profiles-block" aria-label="Social Profiles">
+                    <h2 class="sidebar-heading">Social Profiles</h2>
+
+                    <div class="contact-item" id="social-github">
+                        <div class="icon-bubble icon-bubble--github" aria-hidden="true">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                            </svg>
+                        </div>
+                        <div class="contact-meta">
+                            <span class="label">Github</span>
+                            <a href="https://github.com/melvindavis2003" target="_blank" rel="noopener noreferrer"
+                                class="val" id="link-github" title="Visit GitHub Profile">@melvindavis2003</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item" id="social-linkedin">
+                        <div class="icon-bubble icon-bubble--linkedin" aria-hidden="true">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.74a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28z" />
+                            </svg>
+                        </div>
+                        <div class="contact-meta">
+                            <span class="label">Linkedin</span>
+                            <a href="https://linkedin.com/in/melvindavis2003" target="_blank" rel="noopener noreferrer"
+                                class="val" id="link-linkedin" title="Visit LinkedIn Profile">@melvindavis2003</a>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="sidebar-divider" aria-hidden="true"></div>
+
+                <!-- Primary Focus Areas -->
+                <section class="sidebar-block" id="focus-areas-block" aria-label="Core Focus Areas">
+                    <h2 class="sidebar-heading">Focus Areas</h2>
+
+                    <div class="pill-badge-list" id="focus-pills-list">
+                        <span class="pill-badge pill-badge--primary">Business Analyst</span>
+                        <span class="pill-badge pill-badge--primary">Software Engineering</span>
+                        <span class="pill-badge pill-badge--primary">Project Management</span>
+                    </div>
+                </section>
+
+                <div class="sidebar-divider" aria-hidden="true"></div>
+
+                <!-- Technical Competencies -->
+                <section class="sidebar-block" id="competencies-block" aria-label="Key Technical Competencies">
+                    <h2 class="sidebar-heading">Core Competencies</h2>
+
+                    <div class="pill-badge-list" id="competencies-pills-list">
+                        <span class="pill-badge">AI & Machine Learning</span>
+                        <span class="pill-badge">Requirements Engineering</span>
+                        <span class="pill-badge">Agile & Product Strategy</span>
+                        <span class="pill-badge">Power BI & Analytics</span>
+                        <span class="pill-badge">DevOps & CI/CD</span>
+                    </div>
+                </section>
+
+                <div class="sidebar-divider" aria-hidden="true"></div>
+
+                <!-- Leadership & Community Impact -->
+                <section class="sidebar-block" id="leadership-block" aria-label="Leadership and Community Involvement">
+                    <h2 class="sidebar-heading">Leadership & Activities</h2>
+
+                    <ul class="activity-list" id="leadership-activities-list">
+                        <li class="activity-item">
+                            <div class="activity-bullet" aria-hidden="true"></div>
+                            <div class="activity-meta">
+                                <strong class="activity-title">W3Forge</strong>
+                                <span class="activity-role">Core Member & Event Coordinator</span>
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-bullet" aria-hidden="true"></div>
+                            <div class="activity-meta">
+                                <strong class="activity-title">Hackathena</strong>
+                                <span class="activity-role">Volunteer & Event Coordinator</span>
+                            </div>
+                        </li>
+                        <li class="activity-item">
+                            <div class="activity-bullet" aria-hidden="true"></div>
+                            <div class="activity-meta">
+                                <strong class="activity-title">U&I NGO</strong>
+                                <span class="activity-role">Academic Mentor & Volunteer</span>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <div class="sidebar-divider" aria-hidden="true"></div>
+
+                <!-- Languages Section -->
+                <section class="sidebar-block" id="languages-block" aria-label="Languages Spoken">
+                    <h2 class="sidebar-heading">Languages</h2>
+
+                    <div class="language-list" id="language-list">
+                        <div class="lang-item">
+                            <span class="lang-name">English</span>
+                            <span class="lang-prof">Professional Working</span>
+                        </div>
+                        <div class="lang-item">
+                            <span class="lang-name">Malayalam</span>
+                            <span class="lang-prof">Native / Mother Tongue</span>
+                        </div>
+                        <div class="lang-item">
+                            <span class="lang-name">Hindi</span>
+                            <span class="lang-prof">Conversational</span>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="sidebar-divider" aria-hidden="true"></div>
+
+                <!-- Hobbies & Interests -->
+                <section class="sidebar-block" id="hobbies-block" aria-label="Hobbies and Personal Interests">
+                    <h2 class="sidebar-heading">Hobbies & Interests</h2>
+                    <ul class="hobby-list" id="hobbies-list">
+                        <li>
+                            <div class="icon-bubble icon-bubble--sm" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                                </svg>
+                            </div>
+                            <span>Product Strategy & Prototyping</span>
+                        </li>
+                        <li>
+                            <div class="icon-bubble icon-bubble--sm" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 16v-4M12 8h.01"></path>
+                                </svg>
+                            </div>
+                            <span>AI Technology & Analytics</span>
+                        </li>
+                        <li>
+                            <div class="icon-bubble icon-bubble--sm" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <span>Community Mentoring & NGO Work</span>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+
+            <!-- Main Timeline Content Column -->
+            <section class="main-content" id="main-timeline-content"
+                aria-label="Main Content and Achievements Timeline">
+
+                <!-- Section 1: Education -->
+                <article class="timeline-section" id="education-section">
+                    <div class="timeline-node" aria-hidden="true"></div>
+                    <h2 class="section-title">Education</h2>
+
+                    <div class="education-grid" id="education-cards-wrapper">
+                        <!-- Card 1 -->
+                        <div class="edu-card" id="edu-card-jec">
+                            <div class="edu-header">
+                                <div class="institution-logo logo--college" aria-hidden="true">
+                                    <span>JEC</span>
+                                </div>
+                                <div class="edu-heading-text">
+                                    <h3 class="institution-name">Jyothi Engineering College</h3>
+                                    <p class="edu-accreditation">Thrissur · NBA, UGC & NAAC Accredited</p>
+                                </div>
+                            </div>
+                            <h4 class="degree-title">Bachelor of Technology in Computer Science Engineering</h4>
+                            <p class="edu-honor-text">Top Performer — Placement Training Programme</p>
+                            <div class="edu-meta-line">
+                                <span class="edu-date">2021 – 2025</span>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="edu-card" id="edu-card-ncs">
+                            <div class="edu-header">
+                                <div class="institution-logo logo--school" aria-hidden="true">
+                                    <span>NCS</span>
+                                </div>
+                                <div class="edu-heading-text">
+                                    <h3 class="institution-name">Nirmalamatha Central School</h3>
+                                    <p class="edu-accreditation">Thrissur, Kerala</p>
+                                </div>
+                            </div>
+                            <h4 class="degree-title">Higher Secondary (CBSE)</h4>
+                            <p class="edu-honor-text">Academic Score — 88%</p>
+                            <div class="edu-meta-line">
+                                <span class="edu-date">2019 – 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 2: Achievements & Experience -->
+                <article class="timeline-section" id="experience-section">
+                    <div class="timeline-node" aria-hidden="true"></div>
+                    <h2 class="section-title">Achievements & Experience</h2>
+
+                    <div class="experience-list" id="experience-items-wrapper">
+
+                        <!-- Experience Item 1 -->
+                        <div class="exp-card" id="exp-card-ictak">
+                            <div class="exp-top-bar">
+                                <span class="exp-dates">Jun 2024 – Aug 2024</span>
+                                <span class="exp-tag">AI & Strategy Internship</span>
+                            </div>
+                            <div class="exp-body">
+                                <div class="exp-logo-box" aria-hidden="true">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6c5ce7"
+                                        stroke-width="2">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                                    </svg>
+                                </div>
+                                <div class="exp-info">
+                                    <h3 class="exp-role">Intern — AI & Strategy</h3>
+                                    <p class="exp-company">ICT Academy of Kerala (ICTAK) · Kerala</p>
+                                    <p class="exp-desc">
+                                        Assessed and selected the optimal ML model from 4+ candidates for a project
+                                        deliverable; coordinated task scheduling across a 5-person team over 10 weeks
+                                        and presented final outcomes to programme authorities.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience Item 2 -->
+                        <div class="exp-card" id="exp-card-tatva">
+                            <div class="exp-top-bar">
+                                <span class="exp-dates">Jul 2023</span>
+                                <span class="exp-tag exp-tag--award">2nd Place National Winner</span>
+                            </div>
+                            <div class="exp-body">
+                                <div class="exp-logo-box" aria-hidden="true">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e17055"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="8" r="7"></circle>
+                                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="exp-info">
+                                    <h3 class="exp-role">Research Lead — Tatva Blueprint Awards</h3>
+                                    <p class="exp-company">NIT Calicut · Calicut, India</p>
+                                    <p class="exp-desc">
+                                        Co-authored and presented a drone technology research report to an expert panel
+                                        at NIT Calicut — placed 2nd out of competing teams from institutions across
+                                        India. Sole communication lead for the team: translated technical research
+                                        findings into a structured pitch delivered across multiple evaluation rounds.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience Item 3 -->
+                        <div class="exp-card" id="exp-card-kratos">
+                            <div class="exp-top-bar">
+                                <span class="exp-dates">Jul 2023 – Apr 2024</span>
+                                <span class="exp-tag exp-tag--award">Featured in The Hindu & CUSAT</span>
+                            </div>
+                            <div class="exp-body">
+                                <div class="exp-logo-box" aria-hidden="true">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00b894"
+                                        stroke-width="2">
+                                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                        <polyline points="2 17 12 22 22 17"></polyline>
+                                        <polyline points="2 12 17 22 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="exp-info">
+                                    <h3 class="exp-role">Product Lead — KRATOS & Food Spoilage Detection</h3>
+                                    <p class="exp-company">KSCSTE State Competition · IIT Palakkad & CUSAT Kochi</p>
+                                    <p class="exp-desc">
+                                        Led a 4-person team over 9 months to design, build, and deliver KRATOS — a drone
+                                        system for wildlife capture — from initial concept through state-level
+                                        exhibition; coordinated planning, milestones, and stakeholder reviews. Developed
+                                        a Food Spoilage Detection Module for uncooked meat alongside KRATOS; both
+                                        projects earned institutional recognition, with media coverage in <strong>The
+                                            Hindu</strong> and official <strong>CUSAT research reports</strong>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience Item 4 -->
+                        <div class="exp-card" id="exp-card-uandi">
+                            <div class="exp-top-bar">
+                                <span class="exp-dates">Jan 2026</span>
+                                <span class="exp-tag">Community & Mentoring</span>
+                            </div>
+                            <div class="exp-body">
+                                <div class="exp-logo-box" aria-hidden="true">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fd79a8"
+                                        stroke-width="2">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="exp-info">
+                                    <h3 class="exp-role">Student Volunteer — Individual Training Program</h3>
+                                    <p class="exp-company">U&I (NGO) · Cheroor, Thrissur</p>
+                                    <p class="exp-desc">
+                                        Delivered one-on-one academic mentoring to underprivileged children, adapting
+                                        teaching methods per student under a structured individual training framework.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Section 3: Tools / Skills -->
+                <article class="timeline-section" id="skills-section">
+                    <div class="timeline-node" aria-hidden="true"></div>
+                    <h2 class="section-title">Tools/Skills</h2>
+
+                    <div class="skills-grid" id="skills-grid-wrapper">
+                        <!-- Skill 1: Programming & Backend -->
+                        <div class="skill-card" id="skill-backend">
+                            <div class="skill-icon icon--backend" aria-hidden="true">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            </div>
+                            <h4 class="skill-name">Programming & Backend</h4>
+                            <p class="skill-cat">Python, Node.js, Postman</p>
+                        </div>
+
+                        <!-- Skill 2: Databases & SQL -->
+                        <div class="skill-card" id="skill-databases">
+                            <div class="skill-icon icon--db" aria-hidden="true">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                            </div>
+                            <h4 class="skill-name">Databases & SQL</h4>
+                            <p class="skill-cat">SQL, PostgreSQL, MySQL</p>
+                        </div>
+
+                        <!-- Skill 3: Analytics & Data -->
+                        <div class="skill-card" id="skill-analytics">
+                            <div class="skill-icon icon--analytics" aria-hidden="true">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                            </div>
+                            <h4 class="skill-name">Analytics & Data</h4>
+                            <p class="skill-cat">Power BI, Advanced Excel</p>
+                        </div>
+
+                        <!-- Skill 4: Project Management -->
+                        <div class="skill-card" id="skill-pm">
+                            <div class="skill-icon icon--pm" aria-hidden="true">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            </div>
+                            <h4 class="skill-name">Project Management</h4>
+                            <p class="skill-cat">Jira, Confluence, Agile</p>
+                        </div>
+
+                        <!-- Skill 5: Business Analysis -->
+                        <div class="skill-card" id="skill-ba">
+                            <div class="skill-icon icon--ba" aria-hidden="true">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                            </div>
+                            <h4 class="skill-name">Business Analysis</h4>
+                            <p class="skill-cat">Requirements & Workflow</p>
+                        </div>
+
+                        <!-- Skill 6: DevOps & Infrastructure -->
+                        <div class="skill-card" id="skill-devops">
+                            <div class="skill-icon icon--devops" aria-hidden="true">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                            </div>
+                            <h4 class="skill-name">DevOps & Software Eng.</h4>
+                            <p class="skill-cat">CI/CD & Architecture</p>
+                        </div>
+
+                        <!-- Skill 7: Version Control -->
+                        <div class="skill-card" id="skill-git">
+                            <div class="skill-icon icon--git" aria-hidden="true">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.44.516.515.655 1.258.428 1.9l2.636 2.637c.642-.227 1.385-.088 1.9.427.708.707.708 1.855 0 2.563-.707.707-1.855.707-2.563 0-.54-.54-.673-1.32-.397-1.986l-2.455-2.456v6.417c.215.115.412.274.577.44.707.707.707 1.855 0 2.563-.707.707-1.855.707-2.563 0-.707-.708-.707-1.856 0-2.563.22-.22.484-.37.765-.453v-6.52c-.28-.083-.544-.233-.765-.453-.526-.526-.665-1.277-.42-1.92L7.33 5.485.452 12.363c-.603.604-.603 1.582 0 2.188l10.48 10.478c.604.603 1.582.603 2.188 0l10.426-10.426c.603-.604.603-1.582 0-2.188z"/></svg>
+                            </div>
+                            <h4 class="skill-name">Version Control</h4>
+                            <p class="skill-cat">Git & GitHub</p>
+                        </div>
+
+                        <!-- Skill 8: Web Development -->
+                        <div class="skill-card" id="skill-web">
+                            <div class="skill-icon icon--web" aria-hidden="true">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline></svg>
+                            </div>
+                            <h4 class="skill-name">Web Prototyping</h4>
+                            <p class="skill-cat">HTML5, CSS3, JS</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 4: Latest Projects -->
+                <article class="timeline-section" id="projects-section">
+                    <div class="timeline-node" aria-hidden="true"></div>
+                    <h2 class="section-title">Latest projects</h2>
+
+                    <div class="projects-grid" id="projects-grid-wrapper">
+
+                        <!-- Project 1 -->
+                        <div class="project-card" id="project-card-edux">
+                            <div class="project-header">
+                                <div class="project-icon icon-bg--green" aria-hidden="true">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981"
+                                        stroke-width="2">
+                                        <path
+                                            d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z" />
+                                        <path d="M12 6v6l4 2" />
+                                    </svg>
+                                </div>
+                                <div class="project-title-meta">
+                                    <h3 class="project-title">EduX — Decentralised AI Education</h3>
+                                    <span class="project-date">Jan 2025 – Apr 2025</span>
+                                </div>
+                            </div>
+                            <p class="project-desc">
+                                Defined product strategy, feature scope, and 4-month roadmap for a blockchain-based AI
+                                learning platform; coordinated a 3-person team from wireframe to working prototype, with
+                                gamified token-exchange reward system as the core engagement mechanic.
+                            </p>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="project-card" id="project-card-serene">
+                            <div class="project-header">
+                                <div class="project-icon icon-bg--teal" aria-hidden="true">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#14b8a6"
+                                        stroke-width="2">
+                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                    </svg>
+                                </div>
+                                <div class="project-title-meta">
+                                    <h3 class="project-title">Serene — Real-Time AI Therapy Voice Bot</h3>
+                                    <span class="project-date">Jun 2024 – Sep 2024</span>
+                                </div>
+                            </div>
+                            <p class="project-desc">
+                                Owned product concept, requirements, and implementation oversight for a real-time AI
+                                voice companion built over 4 months; delivered working prototype with empathetic
+                                response and positive-reinforcement behaviour design.
+                            </p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Section 5: Certificates with Interactive Hyperlinks -->
+                <article class="timeline-section" id="certifications-section">
+                    <div class="timeline-node" aria-hidden="true"></div>
+                    <h2 class="section-title">Certificates</h2>
+
+                    <div class="cert-list" id="certifications-list-wrapper">
+
+                        <!-- Cert 1: Google Project Management -->
+                        <a href="https://www.coursera.org/professional-certificates/google-project-management"
+                            target="_blank" rel="noopener noreferrer" class="cert-card cert-card--link"
+                            id="cert-google-pm"
+                            title="Verify Google Project Management Professional Certificate on Coursera">
+                            <div class="cert-icon-box logo-google" aria-hidden="true">
+                                <span>G</span>
+                            </div>
+                            <div class="cert-info">
+                                <h3 class="cert-title">Google Project Management</h3>
+                                <p class="cert-issuer">Coursera · Professional Certificate</p>
+                            </div>
+                            <span class="cert-date cert-date--badge">
+                                Verify Link
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </span>
+                        </a>
+
+                        <!-- Cert 2: IBM Business Analyst -->
+                        <a href="https://www.coursera.org/professional-certificates/ibm-business-analyst"
+                            target="_blank" rel="noopener noreferrer" class="cert-card cert-card--link" id="cert-ibm-ba"
+                            title="Verify IBM Business Analyst Professional Certificate on Coursera">
+                            <div class="cert-icon-box logo-ibm" aria-hidden="true">
+                                <span>IBM</span>
+                            </div>
+                            <div class="cert-info">
+                                <h3 class="cert-title">IBM Business Analyst Professional Certificate</h3>
+                                <p class="cert-issuer">Coursera · Professional Specialization</p>
+                            </div>
+                            <span class="cert-date cert-date--badge">
+                                Verify Link
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </span>
+                        </a>
+
+                        <!-- Cert 3: Wharton Business Foundations -->
+                        <a href="https://www.coursera.org/specializations/wharton-business-foundations" target="_blank"
+                            rel="noopener noreferrer" class="cert-card cert-card--link" id="cert-wharton-bf"
+                            title="Verify Business Foundations Specialization by Wharton on Coursera">
+                            <div class="cert-icon-box logo-wharton" aria-hidden="true">
+                                <span>W</span>
+                            </div>
+                            <div class="cert-info">
+                                <h3 class="cert-title">Business Foundations Specialization</h3>
+                                <p class="cert-issuer">Wharton School, University of Pennsylvania · Coursera</p>
+                            </div>
+                            <span class="cert-date cert-date--badge">
+                                Verify Link
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </span>
+                        </a>
+
+                        <!-- Cert 4: DevOps & Software Engineering -->
+                        <a href="https://www.coursera.org/professional-certificates/devops-and-software-engineering"
+                            target="_blank" rel="noopener noreferrer" class="cert-card cert-card--link"
+                            id="cert-devops-se" title="Verify DevOps and Software Engineering Certificate on Coursera">
+                            <div class="cert-icon-box logo-devops" aria-hidden="true">
+                                <span>DE</span>
+                            </div>
+                            <div class="cert-info">
+                                <h3 class="cert-title">DevOps and Software Engineering</h3>
+                                <p class="cert-issuer">Coursera · Professional Certificate</p>
+                            </div>
+                            <span class="cert-date cert-date--badge">
+                                Verify Link
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </span>
+                        </a>
+
+                        <!-- Combined NACTEC & IAAC Placeholder Tile -->
+                        <div class="cert-card cert-card--upcoming" id="cert-nactec-iaac">
+                            <div class="cert-icon-box logo-upcoming" aria-hidden="true">
+                                <span>🏅</span>
+                            </div>
+                            <div class="cert-info">
+                                <h3 class="cert-title">NACTEC & IAAC Certifications</h3>
+                                <p class="cert-issuer">Official Accreditations & Certifications</p>
+                            </div>
+                            <span class="cert-tag-upcoming">Publishing Soon</span>
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Section 6: References -->
+                <article class="timeline-section timeline-section--footer" id="references-section">
+                    <div class="timeline-node" aria-hidden="true"></div>
+                    <h2 class="section-title">References</h2>
+                    <p class="references-text" id="references-text">Available upon request.</p>
+                </article>
+
+            </section>
+        </main>
+    </div>
+
+    <!-- Theme Switcher Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggleBtn = document.getElementById('theme-toggle');
+            const themeText = themeToggleBtn?.querySelector('.theme-text');
+            
+            function updateToggleText(theme) {
+                if (themeText) {
+                    themeText.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
+                }
+            }
+
+            const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+            updateToggleText(currentTheme);
+
+            themeToggleBtn?.addEventListener('click', () => {
+                const activeTheme = document.documentElement.getAttribute('data-theme');
+                const newTheme = activeTheme === 'dark' ? 'light' : 'dark';
+                document.documentElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                updateToggleText(newTheme);
+            });
+        });
+    </script>
+</body>
+
+</html>
