@@ -9,13 +9,13 @@ Official personal portfolio website of **Melvin Davis** — B.Tech Computer Scie
 
 ## 🌟 Overview
 
-A sleek, responsive, and minimalist interactive resume & portfolio built with clean semantic HTML5, custom CSS variables, and modern JavaScript. Designed with a two-column timeline layout, dark/li[...]
+A sleek, responsive, and minimalist interactive resume & portfolio built with clean semantic HTML5, custom CSS variables, and modern JavaScript. Designed with a two-column timeline layout, dark/light mode support, and lightweight animations for clarity and engagement.
 
 ### ✨ Key Features
 - 🌗 **Dark & Light Mode Toggle**: Smooth theme switching with persistent `localStorage` memory and anti-flash load detection.
 - 🎨 **Minimalist Design**: Custom HSL color design system, Plus Jakarta Sans typography, and micro-interactions.
 - 📜 **Verified Credentials**: Clickable links to official Coursera verification pages for Google, IBM, Wharton, and DevOps certificates.
-- �� **Fully Responsive**: Mobile-friendly, adaptive two-column to single-column layout grid.
+- ✅ **Fully Responsive**: Mobile-friendly, adaptive two-column to single-column layout grid.
 - 🔍 **SEO & Structured Data**: Built-in JSON-LD `Person` Schema, OpenGraph tags, and accessibility labels.
 
 ---
