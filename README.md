@@ -9,7 +9,7 @@ Official personal portfolio website of **Melvin Davis** — B.Tech Computer Scie
 
 ## 🌟 Overview
 
-A sleek, responsive, and minimalist interactive resume & portfolio built with clean semantic HTML5, custom CSS variables, and modern JavaScript. Designed with a two-column timeline layout, dark/light [...]
+A sleek, responsive, and minimalist interactive resume & portfolio built with clean semantic HTML5, custom CSS variables, and modern JavaScript. Designed with a two-column timeline layout, dark/li[...]
 
 ### ✨ Key Features
 - 🌗 **Dark & Light Mode Toggle**: Smooth theme switching with persistent `localStorage` memory and anti-flash load detection.
@@ -41,6 +41,9 @@ portfolio/
 ---
 
 ## 🚀 Live Demo / Local Usage
+
+### Online Demo
+- 🔗 Live site: https://melvin2003portfolio.netlify.app/
 
 ### Running Locally
 You can open `index.html` directly in any web browser, or serve it using any local HTTP server:
