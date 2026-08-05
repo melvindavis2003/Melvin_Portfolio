@@ -9,13 +9,13 @@ Official personal portfolio website of **Melvin Davis** — B.Tech Computer Scie
 
 ## 🌟 Overview
 
-A sleek, responsive, and minimalist interactive resume & portfolio built with clean semantic HTML5, custom CSS variables, and modern JavaScript. Designed with a two-column timeline layout, dark/light theme switcher, SEO OpenGraph & JSON-LD structured data, and direct credential verification links.
+A sleek, responsive, and minimalist interactive resume & portfolio built with clean semantic HTML5, custom CSS variables, and modern JavaScript. Designed with a two-column timeline layout, dark/light [...]
 
 ### ✨ Key Features
 - 🌗 **Dark & Light Mode Toggle**: Smooth theme switching with persistent `localStorage` memory and anti-flash load detection.
 - 🎨 **Minimalist Design**: Custom HSL color design system, Plus Jakarta Sans typography, and micro-interactions.
 - 📜 **Verified Credentials**: Clickable links to official Coursera verification pages for Google, IBM, Wharton, and DevOps certificates.
-- 📱 **Fully Responsive**: Mobile-friendly, adaptive two-column to single-column layout grid.
+- �� **Fully Responsive**: Mobile-friendly, adaptive two-column to single-column layout grid.
 - 🔍 **SEO & Structured Data**: Built-in JSON-LD `Person` Schema, OpenGraph tags, and accessibility labels.
 
 ---
@@ -33,9 +33,9 @@ A sleek, responsive, and minimalist interactive resume & portfolio built with cl
 
 ```
 portfolio/
-├── portfolio.html     # Main HTML structure & content
-├── portfolio.css      # Core Design System, Variables, Layout & Dark Mode
-└── avatar.png         # Profile photo asset
+├── index.html     # Main HTML structure & content
+├── style.css      # Core Design System, Variables, Layout & Dark Mode
+└── avatar.png     # Profile photo asset
 ```
 
 ---
@@ -43,13 +43,13 @@ portfolio/
 ## 🚀 Live Demo / Local Usage
 
 ### Running Locally
-You can open `portfolio.html` directly in any web browser, or serve it using any local HTTP server:
+You can open `index.html` directly in any web browser, or serve it using any local HTTP server:
 
 ```bash
 # Serve with npx http-server
 npx http-server . -p 8080
 ```
-Then visit `http://localhost:8080/portfolio.html`.
+Then visit `http://localhost:8080/index.html`.
 
 ---
 
