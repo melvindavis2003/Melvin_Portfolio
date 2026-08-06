@@ -43,7 +43,7 @@ portfolio/
 ## 🚀 Live Demo / Local Usage
 
 ### Online Demo
-- 🔗 Live site: https://melvin2003portfolio.netlify.app/
+- 🔗 Live site: https://melvin2003.netlify.app/
 
 ### Running Locally
 You can open `index.html` directly in any web browser, or serve it using any local HTTP server:
